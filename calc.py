@@ -1,7 +1,7 @@
 def add(a+b):
 	pass
 def subtract(a-b):
-	pass
+	return x-y
 def multiply(a*b):
 	return x*y
 def subtract(a/b):
