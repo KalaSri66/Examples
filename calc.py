@@ -5,4 +5,4 @@ def subtract(a-b):
 def multiply(a*b):
 	return x*y
 def subtract(a/b):
-	pass
+	return x/y
