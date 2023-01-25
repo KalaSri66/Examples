@@ -6,8 +6,12 @@ pipeline {
     }
     stages {
         stage('Build') {
+            environment {
+               STAGEE = 'Building'
+            }
             steps {
                 echo 'Building..'
+                sh 'printenv'
                 
             }
         }
