@@ -1,0 +1,14 @@
+name: get triggered from other workflow
+
+on:
+  repository_dispatch:
+    types: [ my-event ]
+jobs:
+  build:
+    name: triggered worflow
+    runs-on: ubuntu-latest
+    steps:
+      - name: print variables
+        run: |
+          echo ${{ github.event.client_payload.var1 }}
+          
